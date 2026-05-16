@@ -21,7 +21,8 @@ console.log(chalk.gray(`  Build full-stack apps with ZERO backend. v${VERSION}\n
 program
   .name("zerithdb")
   .description("ZerithDB CLI — scaffold and manage local-first P2P apps")
-  .version(VERSION);
+  .version(VERSION)
+  .option("--experimental", "Enable bleeding-edge experimental features");
 
 program
   .command("init [app-name]")
